@@ -1,0 +1,68 @@
+<!--start footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="block_2">
+                <h4>Quick Links</h4>
+                <ul class="ft-link">
+                    <li <?php if($current_page == 'Home') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>">home</a></li>
+                    <li <?php if($current_page == 'Products' || $current_page == 'Plastic Rod Extrusion' || $current_page == 'Other Plastic Rods' || $current_page == 'Plastic Sheet' || $current_page == 'Plastic Washers & Bushes' || $current_page == 'HDPE' || $current_page == 'Acetal') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>products/"> Products</a></li>
+                    <li <?php if($current_page == 'Services' || $current_page == 'Flex Bows') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>services/">Services</a></li>
+                    <li <?php if($current_page == 'About Us') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>about-us/">About Us</a></li>
+                    <li <?php if($current_page == 'Gallery') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>gallery/">Gallery</a></li>
+                    <li <?php if($current_page == 'Contact Us') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>contact-us/">Contact Us</a></li>
+                </ul>
+            </div>
+            <div  class="block_2">
+               <h4>our Products</h4>
+                <ul class="ft-link">
+                   <li <?php if($current_page == 'Plastic Rod Extrusion') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>plastic-rod-extrusion/">Plastic Rod Extrusion</a></li>
+                   <li <?php if($current_page == 'Other Plastic Rods') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>other-plastic-rods/">Other Plastic Rods</a></li>
+                   <li <?php if($current_page == 'Plastic Sheet') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>plastic-sheet/">Plastic Sheet</a></li>
+                    <li <?php if($current_page == 'Plastic Washers & Bushes') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>plastic-washers-and-bushes/">Plastic Washers & Bushes</a></li>
+                    <li <?php if($current_page == 'HDPE') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>hdpe/">HDPE</a></li>
+                    <li <?php if($current_page == 'Acetal') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>acetal/">Acetal</a></li>
+                </ul>
+            </div>
+            <div class="block_3">
+               <h4>Our Services</h4>
+                <ul class="ft-link">
+                     <li class="<?php if($_GET['page_name'] == 'Machining') { ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Machining">Machining</a></li>
+                     <li class="<?php if($_GET['page_name'] == 'Flex Bows' || $current_page == 'Flex Bows'){ ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Flex Bows">Flex Bows</a></li>
+                     <li class="<?php if($_GET['page_name'] == 'Centreless Grinding') { ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Centreless Grinding">Centreless Grinding</a></li>
+                     <li class="<?php if($_GET['page_name'] == 'Threaded Rod') { ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Threaded Rod">Threaded Rod</a></li>
+                     <li class="<?php if($_GET['page_name'] == 'Cut to Size') { ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Cut to Size">Cut to Size</a></li>
+                     <li class="<?php if($_GET['page_name'] == 'Plastic Welding') { ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Plastic Welding">Plastic Welding</a></li>
+                     <li class="<?php if($_GET['page_name'] == 'Prototype design and development') { ?>active<?php } ?> services-ft-menu"><a href="<?php echo HTTP_SERVER; ?>services?page_name=Prototype design and development">Prototype design and development</a></li>
+                </ul>
+            </div>
+            <div class="block_5">
+                <h4>CONTACT DETAILS</h4>
+                <ul class="contact-list">
+                    <li>
+                       <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        <address><b>AJ Plastics Engineering Pty Ltd</b><br>
+                            82 Vella Dr, Sunshine West, VIC 3020
+                            </address>
+                        <p> <a href="https://www.google.com.au/maps/place/AJ+Plastics+Engineering/@-37.805817,144.8240563,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad6605effad77dd:0xe56f7604afbea77c!8m2!3d-37.805817!4d144.826245" target="_blank">  VIEW MAP</a></p>
+                    </li>
+                    <li>
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <div class="inline-link">
+                                       <a href="tel:0393127122" class="call-link">(03) 9312 7122</a>
+                                        <div class="inline">
+                                            <i class="fa fa-fax" aria-hidden="true"></i>
+                                            <span class="">(03) 9312 7282</span>
+                                            </div>
+                                    </div>
+                 
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sales@ajplasticsengineering.com.au">sales@ajplasticsengineering.com.au</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ft_bottom">
+        <p>2017 Copyright AJ Plastics Engineering Pty Ltd. All Rights Reserved.</p>
+    </div>
+    <a class="scrollTop" href="#top"><i class="fa fa-chevron-up"></i></a>
+</footer>

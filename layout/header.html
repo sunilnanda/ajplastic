@@ -1,0 +1,58 @@
+
+<!-- start header -->
+<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+<header id="sticky">
+    <div class="header_bg">
+        <div class="container">
+            <div class="row mrglr0">    
+                <div class="logo-sm">
+                    <a href="index.html"><img src="<?php echo HTTP_SERVER; ?>images/logo-small.png" class="brand-logo" alt="logo"></a> 
+                </div>
+                <div  class="right">
+                    <ul class="header-link  right text-right">
+                        <li class="call-link">
+                            <a href="tel:0393127122"><label>Call US TODAY</label><i class="fa fa-phone" aria-hidden="true"></i><span>(03) 9312 7122</span></a>
+                        </li>
+                        <li class="search"><a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        
+                    </ul>
+                    <form id="serchform" class="serach-input" method="post" action="<?php echo HTTP_SERVER; ?>search/">
+                            <input type="text" name="search" class="form-control pull-right" id="serchtext" placeholder="Search">  
+                    </form>
+                    <div class="clearfix"></div>
+                    <div class="right-skew">
+                       <div class="email-link"><a href="mailto:sales@ajplasticsengineering.com.au"> <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>sales@ajplasticsengineering.com.au</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+       <div  class="container">
+               
+                <div class="logo-brand">
+                    <a href="<?php echo HTTP_SERVER; ?>"><img src="<?php echo HTTP_SERVER; ?>images/logo.png" class="brand-logo" alt="logo"></a> 
+                </div>
+            <ul id="menu" class="main-menu">
+                <li <?php if($current_page == 'Home') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>">Home</a></li>
+                
+                <li <?php if($current_page == 'Products' || $current_page == 'Plastic Rod Extrusion' || $current_page == 'Other Plastic Rods' || $current_page == 'Plastic Sheet' || $current_page == 'Plastic Washers & Bushes' || $current_page == 'HDPE' || $current_page == 'Acetal') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>products/">products</a>
+                <ul class="sub-menu">
+                        <li <?php if($current_page == 'Plastic Rod Extrusion') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>plastic-rod-extrusion/">Plastic Rod Extrusion</a></li>
+                        <li <?php if($current_page == 'Other Plastic Rods') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>other-plastic-rods/">Other Plastic Rods</a></li>
+                        <li <?php if($current_page == 'Plastic Sheet') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>plastic-sheet/">Plastic Sheet</a></li>
+                       
+                    </ul> 
+                </li>
+                <li <?php if($current_page == 'Services' || $current_page == 'Flex Bows') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>services/">Services</a>
+                    <i class="fa fa-caret-down mysubmenu"></i>
+                    
+                </li>
+                <li <?php if($current_page == 'About Us') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>about-us/">About Us</a> </li>
+                <li <?php if($current_page == 'Gallery') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>gallery/">Gallery</a></li>
+                <li <?php if($current_page == 'Contact Us') { ?>class="active"<?php } ?>><a href="<?php echo HTTP_SERVER; ?>contact-us/">Contact Us </a></li>
+            </ul>
+            </div>
+    </nav>
+</header>
+<!-- end header -->
